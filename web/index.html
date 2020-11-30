@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/favicon.png">
+
+    <!-- Recommended favicon format -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <title>Flutter Web</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Experiments with Flutter Web by Aseem Wangoo">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fir-signin-4477d.firebaseapp.com/">
+    <meta property="og:title" content="FlutterWeb | Aseem Wangoo">
+    <meta property="og:image" content="https://fir-signin-4477d.firebaseapp.com/logo.png">
+    <meta property="og:description" content="Experiments with Flutter Web by Aseem Wangoo">
+    <meta property="og:site_name" content="FlutterWeb">
+    <meta property="og:locale" content="en_US">
+    <!-- Next tags are optional but recommended -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@aseemwangoo">
+    <meta name="twitter:creator" content="@aseemwangoo">
+    <meta name="twitter:url" content="https://fir-signin-4477d.firebaseapp.com/">
+    <meta name="twitter:title" content="FlutterWeb | Aseem Wangoo">
+    <meta name="twitter:description" content="Experiments with Flutter Web by Aseem Wangoo">
+    <meta name="twitter:image" content="https://fir-signin-4477d.firebaseapp.com/logo.png">
+
+    <meta name="monetization" content="$ilp.gatehub.net/376980522">
+
+    <!--ALWAYS COMES HERE-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0">
+    </script>
+
+    <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="aseemwangoo" data-description="If this helped you sometime, somewhere!!" data-message="Thank you. In case you find me worth, pass me a coffee!" data-color="#5F7FFF"
+        data-position="right" data-x_margin="18" data-y_margin="18"></script>
+
+</head>
+
+<body id='body-container' style="background-color:#002B5C;">
+    <!-- <div id="ml_output"></div> -->
+    <img id="img" src="cat.jpg" hidden></img>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script defer src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+    <!-- CUSTOM JS -->
+    <script src="js/custom.js"></script>
+    <script src="js/ml/ml.js"></script>
+    <!-- <script src="js/ml/iris/data.js"></script> -->
+    <script src="js/ml/mobilenet.js"></script>
+
+    <script>
+        let _hostName = window.location.hostname;
+        if (_hostName != 'localhost') {
+            var firebaseConfig = {
+                apiKey: "AIzaSyBxRTBBJGkbu3fqQD7_7DamkziaKN-YdFU",
+                authDomain: "fir-signin-4477d.firebaseapp.com",
+                databaseURL: "https://fir-signin-4477d.firebaseio.com",
+                projectId: "fir-signin-4477d",
+                storageBucket: "fir-signin-4477d.appspot.com",
+                messagingSenderId: "1063780613983",
+                appId: "1:1063780613983:web:590f03b2e93d08d88a40ea",
+                measurementId: "G-48SN55JTLC"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        }
+    </script>
+
+    <script defer src="main.dart.js?version=2.1.2+4" type="application/javascript"></script>
+</body>
+
+</html>

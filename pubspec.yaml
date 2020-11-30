@@ -1,0 +1,102 @@
+name: experiments_with_web
+description: Experiments with Flutter Web
+version: 2.1.2+4
+author: Aseem Wangoo
+homepage: https://web.flatteredwithflutter.com/
+
+environment:
+  sdk: ">=2.8.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # DEPENDENCY INJECTION
+  get_it: ^3.1.0
+
+  # ANIMATION
+  flare_flutter: ^2.0.1
+
+  # STATE-MANAGEMENT
+  provider: ^4.3.2+2
+
+  # JS
+  js: ^0.6.0
+
+  # HTTP REQUEST
+  http: ^0.12.0+4
+
+  # GAMING
+  flame: ^0.24.0
+
+  # CODE GEN
+  freezed_annotation: ^0.7.1
+
+  # HOOKS
+  flutter_hooks: ^0.9.0
+
+  # ICONS
+  font_awesome_flutter: ^8.8.1
+
+  # EFFICIENCY
+  tuple: ^1.0.3
+
+  # OFFLINE
+  hive: ^1.4.2
+  hive_flutter: ^0.3.1
+
+  # AUTOSIZE TEXT
+  auto_size_text: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^1.10.0
+  freezed: ^0.10.9
+  json_serializable: ^3.3.0
+
+  pedantic: ^1.9.0
+
+  # HIVE
+  hive_generator: ^0.7.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/images/
+    - assets/images/bg/room.png
+    - assets/images/virus/enemy.png
+    - assets/images/virus/virus_fly_up.png
+    - assets/images/virus/virus_fly_down.png
+    - assets/images/virus/dragon_fly_up.png
+    - assets/images/virus/dragon_fly_down.png
+    - assets/images/ui/defeat_btn.png
+    - assets/images/ui/game_name.png
+    - assets/images/ui/play_btn.png
+    - assets/images/ui/restart_btn.png
+    - assets/images/ui/sfx_sounds.png
+    - assets/images/ui/no_sfx_sound.png
+    - assets/images/ui/win_btn.png
+    - assets/images/ui/instruction_game.png
+    - assets/images/ui/help_btn.png
+    - assets/images/ui/chat.png
+    - assets/images/ui/no_sound.png
+    - assets/images/ui/sound.png
+    - assets/audio/bgm/bg_music.mp3
+    - assets/audio/sfx/hit1.mp3
+    - assets/audio/sfx/hit2.mp3
+    - assets/audio/sfx/laugh.mp3
+
+  fonts:
+    - family: arial
+      fonts:
+        - asset: assets/fonts/arial.ttf
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
